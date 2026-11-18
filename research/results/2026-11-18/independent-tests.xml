@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="4"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="0"
+	timestamp="2026-11-18T05:05:29"
+	>
+	<testcase name="research_check_ascon128_ref" classname="research_check_ascon128_ref" time="0.0184475" status="run">
+		<properties/>
+		<system-out>130 cases passed, including independent implementation comparison.
+</system-out>
+	</testcase>
+	<testcase name="research_check_ascon128_opt64" classname="research_check_ascon128_opt64" time="0.0192245" status="run">
+		<properties/>
+		<system-out>130 cases passed, including independent implementation comparison.
+</system-out>
+	</testcase>
+	<testcase name="research_check_ascon128a_ref" classname="research_check_ascon128a_ref" time="0.0181418" status="run">
+		<properties/>
+		<system-out>130 cases passed, including independent implementation comparison.
+</system-out>
+	</testcase>
+	<testcase name="research_check_ascon128a_opt64" classname="research_check_ascon128a_opt64" time="0.0181518" status="run">
+		<properties/>
+		<system-out>130 cases passed, including independent implementation comparison.
+</system-out>
+	</testcase>
+</testsuite>

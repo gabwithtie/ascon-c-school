@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "windows-v12",
+      "displayName": "Ascon v1.2 - Windows x64",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "ALG_LIST": "ascon128;ascon128a;asconhash",
+        "IMPL_LIST": "ref;opt64",
+        "TEST_LIST": "genkat",
+        "ASCON_RESEARCH": "ON",
+        "ASCON_RESEARCH_OPT_LABEL": "O2"
+      }
+    },
+    {
+      "name": "windows-v12-size",
+      "displayName": "Ascon v1.2 - Windows x64 size optimized",
+      "inherits": "windows-v12",
+      "binaryDir": "${sourceDir}/build-size",
+      "cacheVariables": {
+        "CMAKE_C_FLAGS_RELEASE": "/MD /O1 /Ob2 /DNDEBUG",
+        "REL_FLAGS": "/O1",
+        "ASCON_RESEARCH_OPT_LABEL": "O1"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-v12-release",
+      "configurePreset": "windows-v12",
+      "configuration": "Release"
+    },
+    {
+      "name": "windows-v12-size-release",
+      "configurePreset": "windows-v12-size",
+      "configuration": "Release"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-v12-release",
+      "configurePreset": "windows-v12",
+      "configuration": "Release",
+      "execution": {
+        "jobs": 1
+      },
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "windows-v12-size-release",
+      "configurePreset": "windows-v12-size",
+      "configuration": "Release",
+      "execution": {
+        "jobs": 1
+      },
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

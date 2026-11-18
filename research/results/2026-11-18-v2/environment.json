@@ -1,0 +1,83 @@
+﻿{
+    "started_utc":  "2026-11-17T21:07:24.6288741Z",
+    "source_commit":  "b359dc54e323608008d859d54158570437a40425",
+    "source_hashes":  [
+                          {
+                              "file":  "research\\benchmark.c",
+                              "sha256":  "042766F28E1C6F77699490DF7198EB9D89647A1F17891931D647228AB022C5F6"
+                          },
+                          {
+                              "file":  "research\\correctness.c",
+                              "sha256":  "612EAAC7DFDEC5AAE3F0A94B513B567EF7B0170656EA9706890368E2EE051239"
+                          },
+                          {
+                              "file":  "CMakeLists.txt",
+                              "sha256":  "A4C45CA811064930ED422DF756EB1C3975665D41325A97A7019910042FF8CD6C"
+                          },
+                          {
+                              "file":  "research\\CMakeLists.txt",
+                              "sha256":  "1E4F62F986A9FE42BB8D9F8330D1E216873C6A135CCF93605D404480BB626E7D"
+                          },
+                          {
+                              "file":  "CMakePresets.json",
+                              "sha256":  "4AD74F357639F1EFFC81CB2A83DD1C8C16A5F4FFDF0EF686E061DF7A131BBA5A"
+                          },
+                          {
+                              "file":  "research\\run-experiments.ps1",
+                              "sha256":  "02544DFB2636FE9B2BFFEA7B8271C90DCF0BAA619D964F2839A9A09F3ACBE0E3"
+                          },
+                          {
+                              "file":  "research\\summarize.ps1",
+                              "sha256":  "66A6E403737DAE8762F421AAEAEAD2079435A788FC0B037B71273B6FB11972EC"
+                          }
+                      ],
+    "cpu":  {
+                "Name":  "12th Gen Intel(R) Core(TM) i5-12400",
+                "NumberOfCores":  6,
+                "NumberOfLogicalProcessors":  12
+            },
+    "os":  {
+               "Caption":  "Microsoft Windows 11 Home",
+               "Version":  "10.0.26200",
+               "OSArchitecture":  "64-bit"
+           },
+    "cmake":  "cmake version 4.4.4",
+    "power_plan":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "background_load":  "Not recorded; machine was not exclusively reserved.",
+    "builds":  [
+                   {
+                       "optimization":  "O2",
+                       "cache_flags":  [
+                                           "CMAKE_C_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG",
+                                           "REL_FLAGS:STRING=/O2",
+                                           "CMAKE_GENERATOR:INTERNAL=Visual Studio 18 2026"
+                                       ],
+                       "compiler":  [
+                                        "set(CMAKE_C_COMPILER \"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe\")",
+                                        "set(CMAKE_C_COMPILER_ID \"MSVC\")",
+                                        "set(CMAKE_C_COMPILER_VERSION \"19.51.36256.0\")"
+                                    ]
+                   },
+                   {
+                       "optimization":  "O1",
+                       "cache_flags":  [
+                                           "CMAKE_C_FLAGS_RELEASE:STRING=/MD /O1 /Ob2 /DNDEBUG",
+                                           "REL_FLAGS:STRING=/O1",
+                                           "CMAKE_GENERATOR:INTERNAL=Visual Studio 18 2026"
+                                       ],
+                       "compiler":  [
+                                        "set(CMAKE_C_COMPILER \"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe\")",
+                                        "set(CMAKE_C_COMPILER_ID \"MSVC\")",
+                                        "set(CMAKE_C_COMPILER_VERSION \"19.51.36256.0\")"
+                                    ]
+                   }
+               ],
+    "timer":  "Windows QueryPerformanceCounter; ticks are not CPU cycles",
+    "inputs":  "Deterministic benchmark-only inputs; nonce is reused within timing batches.",
+    "runs":  3,
+    "batches_per_case":  30,
+    "test_presets_passed":  [
+                                "windows-v12-release",
+                                "windows-v12-size-release"
+                            ]
+}

@@ -1,0 +1,11 @@
+/build/
+/build-size/
+/build-independent/
+/research/*.aux
+/research/*.bbl
+/research/*.blg
+/research/*.fdb_latexmk
+/research/*.fls
+/research/*.log
+/research/*.out
+/research/*.synctex.gz

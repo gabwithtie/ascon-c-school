@@ -120,3 +120,8 @@ foreach(CRYPTO aead hash auth)
   endforeach()
 endforeach()
 
+option(ASCON_RESEARCH "Build the reproduction tests and benchmarks" OFF)
+if(ASCON_RESEARCH)
+  add_subdirectory(research)
+endif()
+

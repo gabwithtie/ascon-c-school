@@ -1,0 +1,5 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.ctest.parallelJobs": 1,
+  "cmake.ctest.allowParallelJobs": false
+}
